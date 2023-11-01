@@ -32,14 +32,14 @@ int ledPin = 13;      // select the pin for the LED
 int sensorValue = 0;  // variable to store the value coming from the sensor
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(1100);
   pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
   sensorValue = analogRead(sensorPin);
   Serial.println(0)
-   ;if (sensorValue <= 512){
+   ;if (sensorValue <= 600){
       digitalWrite(ledPin, LOW);
     } else {
     digitalWrite(ledPin, HIGH); 
