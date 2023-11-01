@@ -40,8 +40,8 @@ void loop() {
   sensorValue = analogRead(sensorPin);
   Serial.println(0)
    ;if (sensorValue <= 512){
-      digitalWrite(ledPin, LOW);
+      digitalWrite(ledPin, HIGH);
     } else {
-    digitalWrite(ledPin, HIGH); 
+    digitalWrite(ledPin, LOW); 
     }
 }
