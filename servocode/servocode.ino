@@ -15,13 +15,9 @@ void loop() {
   // put your main code here, to run repeatedly:
   buttonState = digitalRead(buttonPin);
   if (buttonState == HIGH) {
-    for (pos = 0; pos <= 180; pos += 180){
-      myservo.write(pos);
+    myservo.write(180);
     }
-  }
   else if (buttonState == LOW) {
-    for (pos = 180; pos >= 0; pos -= 180){
-      myservo.write(pos);
-    }
+    myservo.write(0)
   }
 }
