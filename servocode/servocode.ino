@@ -1,7 +1,7 @@
 #include <Servo.h>
 Servo myservo;
 int pos = 0;
-const int buttonPin = 2;
+const int buttonPin = 8;
 void setup() {
   // put your setup code here, to run once:
 myservo.attach(10)
