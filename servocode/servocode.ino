@@ -33,6 +33,7 @@ void setup() {
   myservo3.write(0);
   pinMode(buttonPin3, INPUT);
   pinMode(servoPin3, OUTPUT);
+  myservo3.write(0);
 }
 
 void loop() {
@@ -59,8 +60,6 @@ void loop() {
   if (previousButtonState3 != buttonState3){
     if(buttonState3 == HIGH){
       myservo3.write(180);
-    } else {
-      myservo3.write(0);
     }
   }
   previousButtonState = buttonState;
